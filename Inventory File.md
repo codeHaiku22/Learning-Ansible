@@ -70,19 +70,19 @@ all:
   children:
     appservers:
       hosts:
-		windows2023.example.com:
-		redhat.example.com:
+        windows2023.example.com:
+        redhat.example.com:
     webservers:
       hosts:
-		apache.example.com:
-		nginx.example.com:    
-	dbservers:
-	  hosts:
-		mssql-ubuntu.example.com:
-		postgresql-debian.example.com:
-	apt-packages-group:    #Collection of groups
-	  children:
-	    webservers:
-	    dbservers:
+        apache.example.com:
+        nginx.example.com:    
+    dbservers:
+      hosts:
+        mssql-ubuntu.example.com:
+        postgresql-debian.example.com:
+    apt-packages-group:    #Collection of groups
+      children:
+        webservers:
+        dbservers:
 ```
 
